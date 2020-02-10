@@ -13,7 +13,8 @@ Senior Capstone Project that alerts caregiver's if they leave a child in the car
 ## Communicating with Caregiver
 
 ![Figure 1](/Figures/sendAndReceiver.jpg)
-**Figure 1** *Picture of the Sender and Receiver with size comparisons
+
+**Figure 1** *Picture of the Sender and Receiver with size comparisons*
 
 ### LoRa
 We are using the "LoRa" library from sandeepmistry to code. The goal is to send messages from a blackbox on the carseat to the caregiver outside of the car within a minimum range of 600 feet in urban areas.
@@ -44,6 +45,7 @@ The webhook is a Particle feather that allows a message to be sent from a purcha
 A homemade pressure sensitive matt made using conductive fabric and velostat laminated together. Velostat is a pressure sensitive material that changes resistance based on applied pressure. This would be placed under the child to detect if the child is in the car.
 
 ![Figure 2](/Figures/velostatCircuit.png)
+
 **Figure 2** *Voltage divider circuit connecting pressure mat to mcu*
 
 ### Infrared (Option 2)
