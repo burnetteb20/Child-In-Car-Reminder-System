@@ -10,7 +10,7 @@ We are using the "LoRa" library from sandeepmistry to code. The goal is to send 
 We are using a LoRa Feather M0 microcontroller with a UFL antenna to send messages. The messages will be sent based on temperature readings only if the child is in the car. The controller will send messages repeatedly until it receives a reply message from the receiver to ensure that the message is received. Hopefully, an Adafruit TPL5111 breakout board will be used to put the microcontroller to sleep in order to save batter. A 3.3 volt LiPo battery will be used in conjunction with a breakaway micro-usb charger that will power the mcu and charge the battery while the car is on. This will receive and process information about the temperature and presence of the child
 
 #### Receiver
-We are using a LoRa Feather M0 microcontroller with a 7.8 cm wire antenna. The radio interrupt pin will be used to allow the microcontroller to sleep until a message is received in order to save power. If it receives a proper message, it will send a reply message if a button on the screen is pressed. The mcu will also be charged by a 3.3V LiPo batter, and it will be connected to an Adafruit Oled Featherwing screen. The screen will desplay the message about the status of the child, and a press of one of the buttons will send the reply message.
+We are using a LoRa Feather M0 microcontroller with a 7.8 cm wire antenna. The radio interrupt pin will be used to allow the microcontroller to sleep until a message is received in order to save power. If it receives a proper message, it will send a reply message if a button on the screen is pressed. The mcu will also be powered by a 3.3V LiPo battery, and it will be connected to an Adafruit Oled Featherwing screen. The screen will desplay the message about the status of the child, and a press of one of the buttons will send the reply message.
 
 #### Range
 
@@ -26,11 +26,11 @@ The webhook is a Particle feather that allows a message to be sent from a purcha
 
 ## Detecting the Presence of a child
 
-### Pressure Mat
+### Pressure Mat (Option 1)
 A homemade pressure sensitive matt made using conductive fabric and velostat laminated together. Velostat is a pressure sensitive material that changes resistance based on applied pressure. This would be placed under the child to detect if the child is in the car.
 
-### Infrared
-A Sharp
+### Infrared (Option 2)
+A Sharp GP2Y0A21YK0F Analog Infrared sensor. This sensor detects any object from 10 - 80 cm and sends a corresponding voltage output. We are using the Arduino_SharpIR from Giuseppe Masino to interpret the voltage output as a precise distance. This will be clipped to the car seat and stay out of arms reach of the child looking facing into the car seat 
 
 ## Battery Life
 
