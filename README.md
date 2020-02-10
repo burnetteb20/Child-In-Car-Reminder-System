@@ -1,7 +1,18 @@
+**Authors:  Bryce Burnette, Jack Robey, Karlens Joas**
+
+**University:  Washington and Lee University, Lexington, VA**
+
+**Professors:  Professor Jon Erickson and Professor Joel Kuehner**
+***
+
 # Child-In-Car-Reminder-System
+![Project status badge](https://img.shields.io/badge/Project%20status-ACTIVE-brightgreen.svg)
+
 Senior Capstone Project that alerts caregiver's if they leave a child in the car seat and the child experiences unsafe temperature
 
 ## Communicating with Caregiver
+
+
 
 ### LoRa
 We are using the "LoRa" library from sandeepmistry to code. The goal is to send messages from a blackbox on the carseat to the caregiver outside of the car within a minimum range of 600 feet in urban areas.
