@@ -12,6 +12,8 @@ Senior Capstone Project that alerts caregiver's if they leave a child in the car
 
 ## Communicating with Caregiver
 
+
+
 ### LoRa
 We are using the "LoRa" library from sandeepmistry to code. The goal is to send messages from a blackbox on the carseat to the caregiver outside of the car within a minimum range of 600 feet in urban areas.
 
