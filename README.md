@@ -12,7 +12,7 @@ Senior Capstone Project that alerts caregiver's if they leave a child in the car
 
 ## Communicating with Caregiver
 
-![Figure 1](/Figures/sendAndReceiver.jpg)
+![Figure 1](/Figures/senderAndReceiver.jpg)
 
 **Figure 1** *Picture of the Sender and Receiver with size comparisons*
 
