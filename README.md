@@ -1,3 +1,10 @@
+**Authors:  Bryce Burnette, Jack Robey, Karlens Joas**
+
+**University:  Washington and Lee University, Lexington, VA**
+
+**Professors:  Professor Jon Erickson and Professor Joel Kuehner**
+***
+
 # Child-In-Car-Reminder-System
 ![Project status badge](https://img.shields.io/badge/Project%20status-ACTIVE-brightgreen.svg)
 
