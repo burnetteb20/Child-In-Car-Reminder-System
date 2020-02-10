@@ -27,6 +27,8 @@ We are using a LoRa Feather M0 microcontroller with a 7.8 cm wire antenna. The r
 
 #### Range
 
+Range testing is currently underway
+
 ### Boron
 The Particle Boron mcu is another option that we are controlling. This will be in a blackbox on the car seat and will process information about the temperature and presence of a child. If the requirements are reached, the mcu will communicate via LTE to a Twilio Webhook that will send an SMS message to the caregiver's phone
 
@@ -35,9 +37,13 @@ The webhook is a Particle feather that allows a message to be sent from a purcha
 
 ## Reading Temperature
 
+A core temperature of 107 degrees Fahrenheit is fatal for a child. We will send temperature alerts at 80, 90, and a 100 degrees Fahrenheit. We will also send an alert if the temperature is rising extremely fast at any point.
+
 ### Temperature Sensor
 
 ### Box
+
+We are using an aluminum box with machined vents because this will give the best temperature response to give the most accurate temperature reading
 
 ## Detecting the Presence of a child
 
@@ -53,6 +59,8 @@ A Sharp GP2Y0A21YK0F Analog Infrared sensor. This sensor detects any object from
 
 ## Battery Life
 
+Power Consumption measurements are currently underway
+
 ### TPL 5111
 
-### Power Consumption
+A breakout board from Adafruit that uses the Enable pin on the mcu to turn off the microcontroller for a specified period of time
