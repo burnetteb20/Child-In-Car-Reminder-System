@@ -15,7 +15,7 @@ We are using a LoRa Feather M0 microcontroller with a 7.8 cm wire antenna. The r
 #### Range
 
 ### Boron
-The Particle Boron mcu is another option that we are controlling. This will be in a blackbox on the car seat and will process information about the temperature and presence of a child. If the requirements are reachec, the mcu will communicate via LTE to a Twilio Webhook that will send an SMS message to the caregiver's phone
+The Particle Boron mcu is another option that we are controlling. This will be in a blackbox on the car seat and will process information about the temperature and presence of a child. If the requirements are reached, the mcu will communicate via LTE to a Twilio Webhook that will send an SMS message to the caregiver's phone
 
 #### Twilio Webhook
 The webhook is a Particle feather that allows a message to be sent from a purchased number to the verified numbers of the caregivers.
@@ -23,6 +23,8 @@ The webhook is a Particle feather that allows a message to be sent from a purcha
 ## Reading Temperature
 
 ### Temperature Sensor
+
+### Box
 
 ## Detecting the Presence of a child
 
