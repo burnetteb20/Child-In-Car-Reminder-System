@@ -14,7 +14,7 @@ void setup()
 void loop() 
 {
   // toggle DONE so TPL knows to cut power!
-  digitalWrite(LED, LOW);
+  digitalWrite(LED, HIGH);
   digitalWrite(DONEPIN, LOW);
   delay(1000);
   digitalWrite(DONEPIN, HIGH);
