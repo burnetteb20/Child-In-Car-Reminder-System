@@ -8,7 +8,7 @@
 # Child-In-Car-Reminder-System
 ![Project status badge](https://img.shields.io/badge/Project%20status-ACTIVE-brightgreen.svg)
 
-Senior Capstone Project that alerts caregiver's if they leave a child in the car seat and the child experiences unsafe temperature
+Senior Capstone Project that alerts caregiver's if they leave a child in the car seat and the child experiences unsafe temperature. Attaches to any car seat and does not impede functionality.
 
 ## Communicating with Caregiver
 
@@ -16,7 +16,7 @@ Senior Capstone Project that alerts caregiver's if they leave a child in the car
 
 **Figure 1** *Picture of the Sender and Receiver with size comparisons*
 
-### LoRa
+### LoRa (Option 1)
 We are using the [arduino-LoRa](https://github.com/sandeepmistry/arduino-LoRa) library from sandeepmistry to code. The goal is to send messages from a blackbox on the carseat to the caregiver outside of the car within a minimum range of 600 feet in urban areas.
 
 #### Sender
@@ -29,7 +29,7 @@ We are using a LoRa Feather M0 microcontroller with a 7.8 cm wire antenna. The r
 
 Range testing is currently underway
 
-### Boron
+### Boron (Option 2)
 The [Particle Boron](https://docs.particle.io/boron/) mcu is another option that we are controlling. This will be in a blackbox on the car seat and will process information about the temperature and presence of a child. If the requirements are reached, the mcu will communicate via LTE to a Twilio Webhook that will send an SMS message to the caregiver's phone
 
 #### Twilio Webhook
