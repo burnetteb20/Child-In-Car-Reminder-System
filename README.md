@@ -25,6 +25,10 @@ We are using a [LoRa Feather M0](https://learn.adafruit.com/adafruit-feather-m0-
 #### Receiver
 We are using a LoRa Feather M0 microcontroller with a 7.8 cm wire antenna. The radio interrupt pin will be used to allow the microcontroller to sleep until a message is received in order to save power. If it receives a proper message, it will send a reply message if a button on the screen is pressed. The mcu will also be powered by a 3.3V LiPo battery, and it will be connected to an [Adafruit Oled Featherwing](https://www.adafruit.com/product/2900) screen. The screen will desplay the message about the status of the child, and a press of one of the buttons will send the reply message.
 
+#### Antenna
+
+The Sender will use a a [UFL Antenna](https://www.adafruit.com/product/3340) while the receiver will use a 7.8 cm wire antenna, based on the quarter wave whip antenna.
+
 #### Range
 
 Range testing is currently underway
@@ -60,6 +64,10 @@ A [Sharp GP2Y0A21YK0F](https://global.sharp/products/device/lineup/data/pdf/data
 ## Battery Life
 
 Power Consumption measurements are currently underway
+
+### Battery
+
+A 3.7 V, 500 mAh LiPo Battery to power the mcu's. These can be charged by microusb. 
 
 ### TPL 5111
 
