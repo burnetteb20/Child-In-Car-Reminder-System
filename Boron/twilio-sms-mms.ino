@@ -9,7 +9,11 @@ Author: Paul Kamp, Twilio Developer Education
 License: MIT
 */
 
+const int numReadings = 10;
 String body = "Your child is in the car!";
+bool childInCar = null;
+float temp = null;
+float readings[numReadings];
 
 void sendMessage(const String& body)
 {
@@ -26,12 +30,25 @@ void sendMessage(const String& body)
 
 void setup() 
 {
-    sendMessage(body);
     Serial.begin(115200);
+    for (int thisReading = 0; thisReading < numReadings; thisReading++) 
+    {
+        readings[thisReading] = 0;
+    }
 }
 
 void loop() 
 {
-    Serial.println("That's all!  You can restart or edit the code now.");
+    //if voltage in threshold
+        childInCar = true;
+    //else
+        childInCar = false;
+    while childInCar = true;
+    {
+        if (readings[numReadings] - readings[0] >= 10) or temp > 90
+        {
+            sendMessage(body);
+        }
+    }
     delay(60000);
 }
