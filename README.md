@@ -16,7 +16,7 @@ Senior Capstone Project that alerts caregiver's if they leave a child in the car
 
 **Figure 1** *Picture of the Sender and Receiver with size comparisons*
 
-### Boron (Option 2)
+### Boron
 The [Particle Boron](https://docs.particle.io/boron/) mcu is the choice for communicating with the caregiver. This will be in a blackbox on the car seat and will process information about the temperature and presence of a child. If the requirements are reached, the mcu will communicate via LTE to a Twilio Webhook that will send an SMS message to the caregiver's phone. The Boron connects to the Particle Cloud via LTE. A SMS text will be triggered using a Webhook in the cloud. LTE range an connectivity is outstanding, making us able to connect with the cloud in most areas and send messages to people practically anywhere.
 
 #### Twilio Webhook
